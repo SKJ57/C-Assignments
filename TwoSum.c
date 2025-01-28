@@ -18,7 +18,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
         }
     }
     free(result);
-    return 0;
+    return NULL;
 }
 
 int main(){
@@ -39,7 +39,7 @@ int main(){
     int returnSize;
     int* indices = twoSum(nums, numsSize, target, &returnSize);
 
-    if(indices!= 0){
+    if(indices!= NULL){
         printf("Indices: [%d, %d]", indices[0], indices[1]);
         free(indices);
     } else{
