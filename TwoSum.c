@@ -17,7 +17,6 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
             }
         }
     }
-    free(result);
     return NULL;
 }
 
